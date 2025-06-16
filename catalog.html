@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catálogo Exclusivo - 30k Drinks | Bebidas Premium e Experiências VIP</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/catalog.css" />
+    <link rel="icon" href="assets/img/30K.png" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <a
+      href="https://wa.me/5511999999999"
+      class="whatsapp-float"
+      target="_blank"
+      title="Fale conosco no WhatsApp"
+    >
+      <svg width="35" height="35" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.465 3.516"/>
+      </svg>
+    </a>
+
+    <header class="header">
+      <nav class="navbar">
+        <div class="logo">
+          <a href="index.html">
+            <img class="logo30k" src="assets/img/30K.png" alt="30k Drinks Logo" />
+          </a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="catalog.html" class="active">Catálogo</a></li>
+          <li><a href="index.html#sobre">Sobre</a></li>
+          <li><a href="index.html#vip-experience">VIP Experience</a></li>
+          <li><a href="index.html#contato">Contato</a></li>
+          <li>
+            <a href="#area-secreta" class="btn-login">Área Secreta (Login)</a>
+          </li>
+        </ul>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="catalog-main">
+      <!-- Restricted Access Notice -->
+      <div class="access-notice">
+        <div class="container">
+          <div class="notice-content">
+            <span class="warning-icon">⚠️</span>
+            <p>Acesso restrito. Para comprar, você precisa ser indicado ou ter um convite.</p>
+            <a href="https://wa.me/5511999999999" class="btn-invite">Solicitar Convite</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Catalog Header -->
+      <section class="catalog-header">
+        <div class="container">
+          <h1>Catálogo <span>Exclusivo</span></h1>
+          <p>Descubra nossa seleção premium de bebidas, drinks e experiências únicas</p>
+        </div>
+      </section>
+
+      <!-- Search and Filters -->
+      <section class="catalog-controls">
+        <div class="container">
+          <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Buscar produtos..." />
+            <button type="button" class="search-btn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+              </svg>
+            </button>
+          </div>
+
+          <div class="filters-container">
+            <div class="filter-group">
+              <label for="categoryFilter">Categoria:</label>
+              <select id="categoryFilter">
+                <option value="all">Todas as Categorias</option>
+                <option value="alcoholic">Bebidas Alcoólicas</option>
+                <option value="ready-drinks">Drinks Prontos</option>
+                <option value="energy">Energéticos & Misturadores</option>
+                <option value="cigarettes">Cigarros e Fumo</option>
+                <option value="combos">Combos 30k</option>
+                <option value="vip">VIP Experience</option>
+              </select>
+            </div>
+
+            <div class="filter-group">
+              <label for="priceFilter">Preço:</label>
+              <select id="priceFilter">
+                <option value="all">Todos os Preços</option>
+                <option value="0-50">Até R$ 50</option>
+                <option value="50-100">R$ 50 - R$ 100</option>
+                <option value="100-200">R$ 100 - R$ 200</option>
+                <option value="200+">Acima de R$ 200</option>
+              </select>
+            </div>
+
+            <div class="filter-group">
+              <label for="typeFilter">Tipo:</label>
+              <select id="typeFilter">
+                <option value="all">Todos os Tipos</option>
+                <option value="vodka">Vodka</option>
+                <option value="whisky">Whisky</option>
+                <option value="gin">Gin</option>
+                <option value="cerveja">Cerveja</option>
+                <option value="cocktail">Cocktail</option>
+                <option value="energy">Energético</option>
+              </select>
+            </div>
+
+            <button class="clear-filters" id="clearFilters">Limpar Filtros</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Products Grid -->
+      <section class="products-section">
+        <div class="container">
+          <div class="products-grid" id="productsGrid">
+            <!-- Bebidas Alcoólicas -->
+            <div class="product-card" data-category="alcoholic" data-price="89" data-type="gin">
+              <div class="product-image">
+                <img src="https://images.pexels.com/photos/5947043/pexels-photo-5947043.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Gin Royal Blue Edition" />
+                <div class="product-badge">Premium</div>
+              </div>
+              <div class="product-info">
+                <h3>Gin Royal Blue Edition</h3>
+                <p class="product-description">Gin premium com notas cítricas e especiarias exclusivas</p>
+                <div class="product-price">R$ 89,90</div>
+                <button class="btn-add-cart">Fazer Pedido</button>
+              </div>
+            </div>
+
+            <div class="product-card" data-category="alcoholic" data-price="159" data-type="whisky">
+              <div class="product-image">
+                <img src="https://images.pexels.com/photos/1304540/pexels-photo-1304540.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Whisky Premium Collection" />
+                <div class="product-badge">Exclusivo</div>
+              </div>
+              <div class="product-info">
+                <h3>Whisky Premium Collection</h3>
+                <p class="product-description">Blend especial envelhecido 12 anos</p>
+                <div class="product-price">R$ 159,90</div>
+                <button class="btn-add-cart">Fazer Pedido</button>
+              </div>
+            </div>
+
+            <div class="product-card" data-category="alcoholic" data-price="79" data-type="vodka">
+              <div class="product-image">
+                <img src="https://images.pexels.com/photos/1304540/pexels-photo-1304540.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Vodka Crystal Edition" />
+              </div>
+              <div class="product-info">
+                <h3>Vodka Crystal Edition</h3>
+                <p class="product-description">Vodka ultra premium filtrada 7 vezes</p>
+                <div class="product-price">R$ 79,90</div>
+                <button class="btn-add-cart">Fazer Pedido</button>
+              </div>
+            </div>
+
+            <!-- Drinks Prontos -->
+            <div class="product-card" data-category="ready-drinks" data-price="45" data-type="cocktail">
+              <div class="product-image">
+                <img src="https://images.pexels.com/photos/338713/pexels-photo-338713.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Coquetel Gold Rush Lata" />
+                <div class="product-badge">Novo</div>
+              </div>
+              <div class="product-info">
+                <h3>Coquetel Gold Rush Lata</h3>
+                <p class="product-description">Drink pronto com toque dourado e sabor único</p>
+                <div class="product-price">R$ 45,90</div>
+                <button class="btn-add-cart">Fazer Pedido</button>
+              </div>
+            </div>
+
+            <div class="product-card" data-category="ready-drinks" data-price="39" data-type="cocktail">
+              <div class="product-image">
+                <img src="https://images.pexels.com/photos/338713/pexels-photo-338713.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Mojito Night Edition" />
+              </div>
+              <div class="product-info">
+                <h3>Mojito Night Edition</h3>
+                <p class="product-description">Mojito premium pronto para beber</p>
+                <div class="product-price">R$ 39,90</div>
+                <button class="btn-add-cart">Fazer Pedido</button>
+              </div>
+            </div>
+
+            <!-- Energéticos & Misturadores -->
+            <div class="product-card" data-category="energy" data-price="25" data-type="energy">
+              <div class="product-image">
+                <img src="https://images.pexels.com/photos/1304540/pexels-photo-1304540.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Energy Black 30k" />
+              </div>
+              <div class="product-info">
+                <h3>Energy Black 30k</h3>
+                <p class="product-description">Energético exclusivo da marca 30k</p>
+                <div class="product-price">R$ 25,90</div>
+                <button class="btn-add-cart">Fazer Pedido</button>
+              </div>
+            </div>
+
+            <div class="product-card" data-category="energy" data-price="18" data-type="energy">
+              <div class="product-image">
+                <img src="https://images.pexels.com/photos/1304540/pexels-photo-1304540.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Tônica Premium Mix" />
+              </div>
+              <div class="product-info">
+                <h3>Tônica Premium Mix</h3>
+                <p class="product-description">Água tônica artesanal para drinks perfeitos</p>
+                <div class="product-price">R$ 18,90</div>
+                <button class="btn-add-cart">Fazer Pedido</button>
+              </div>
+            </div>
+
+            <!-- Cigarros e Fumo -->
+            <div class="product-card" data-category="cigarettes" data-price="35" data-type="cigarettes">
+              <div class="product-image">
+                <img src="https://images.pexels.com/photos/1304540/pexels-photo-1304540.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Cigarro Premium Gold" />
+                <div class="product-badge">18+</div>
+              </div>
+              <div class="product-info">
+                <h3>Cigarro Premium Gold</h3>
+                <p class="product-description">Linha premium importada</p>
+                <div class="product-price">R$ 35,90</div>
+                <button class="btn-add-cart">Fazer Pedido</button>
+              </div>
+            </div>
+
+            <!-- Combos 30k -->
+            <div class="product-card" data-category="combos" data-price="199" data-type="combo">
+              <div class="product-image">
+                <img src="https://images.pexels.com/photos/1304540/pexels-photo-1304540.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Party Pack Noturno" />
+                <div class="product-badge">Combo</div>
+              </div>
+              <div class="product-info">
+                <h3>Party Pack Noturno</h3>
+                <p class="product-description">Kit completo: 2 bebidas + energético + snacks</p>
+                <div class="product-price">R$ 199,90</div>
+                <button class="btn-add-cart">Fazer Pedido</button>
+              </div>
+            </div>
+
+            <div class="product-card" data-category="combos" data-price="299" data-type="combo">
+              <div class="product-image">
+                <img src="https://images.pexels.com/photos/338713/pexels-photo-338713.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Combo Festa VIP" />
+                <div class="product-badge">VIP</div>
+              </div>
+              <div class="product-info">
+                <h3>Combo Festa VIP</h3>
+                <p class="product-description">Kit premium para festas exclusivas</p>
+                <div class="product-price">R$ 299,90</div>
+                <button class="btn-add-cart">Fazer Pedido</button>
+              </div>
+            </div>
+
+            <!-- VIP Experience -->
+            <div class="product-card" data-category="vip" data-price="500" data-type="experience">
+              <div class="product-image">
+                <img src="https://images.pexels.com/photos/1267697/pexels-photo-1267697.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Acesso VIP Mensal" />
+                <div class="product-badge">VIP</div>
+              </div>
+              <div class="product-info">
+                <h3>Acesso VIP Mensal</h3>
+                <p class="product-description">Acesso completo aos eventos da sede por 30 dias</p>
+                <div class="product-price">R$ 500,00</div>
+                <button class="btn-add-cart">Garantir Acesso</button>
+              </div>
+            </div>
+
+            <div class="product-card" data-category="vip" data-price="150" data-type="experience">
+              <div class="product-image">
+                <img src="https://images.pexels.com/photos/1267697/pexels-photo-1267697.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Rolê Secreto Individual" />
+                <div class="product-badge">Limitado</div>
+              </div>
+              <div class="product-info">
+                <h3>Rolê Secreto Individual</h3>
+                <p class="product-description">Ingresso para próximo evento exclusivo</p>
+                <div class="product-price">R$ 150,00</div>
+                <button class="btn-add-cart">Reservar Vaga</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="no-results" id="noResults" style="display: none;">
+            <h3>Nenhum produto encontrado</h3>
+            <p>Tente ajustar os filtros ou buscar por outros termos.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Credit Policy Notice -->
+      <section class="credit-policy">
+        <div class="container">
+          <div class="policy-card">
+            <h3>💳 Política de Fiado</h3>
+            <p>Disponível para clientes VIP com histórico de compras. Consulte condições via WhatsApp.</p>
+            <a href="https://wa.me/5511999999999" class="btn-secondary">Consultar Fiado</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- VIP Experience Call -->
+      <section class="vip-call">
+        <div class="container">
+          <div class="vip-call-content">
+            <h2>Quer Mais que Apenas Comprar?</h2>
+            <p>Participe dos nossos <strong>rolês VIP</strong>, <strong>sorteios exclusivos</strong> e <strong>roletas premiadas</strong>. A diversão vai muito além do catálogo.</p>
+            <div class="vip-buttons">
+              <a href="index.html#vip-experience" class="btn-primary">Ser VIP</a>
+              <a href="#" class="btn-secondary">Ver Sorteios</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-section quick-links">
+            <h3>Links Rápidos</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="catalog.html">Catálogo</a></li>
+              <li><a href="index.html#sobre">Sobre</a></li>
+              <li><a href="index.html#vip-experience">VIP Experience</a></li>
+              <li><a href="index.html#contato">Contato</a></li>
+            </ul>
+          </div>
+          <div class="footer-section contact-info">
+            <h3>Contato</h3>
+            <ul>
+              <li>WhatsApp: (11) 99999-9999</li>
+              <li>Email: contato@30kdrinks.com</li>
+              <li>Horário: 18h às 02h</li>
+            </ul>
+          </div>
+          <div class="footer-section social-links">
+            <h3>Conecte-se</h3>
+            <div class="social-icons">
+              <a href="https://wa.me/5511999999999" target="_blank" title="WhatsApp">
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.465 3.516"/>
+                </svg>
+              </a>
+              <a href="https://instagram.com/30kdrinks" target="_blank" title="Instagram">
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="footer-section legal-links">
+            <h3>Legal</h3>
+            <ul>
+              <li><a href="#">Termos de Uso</a></li>
+              <li><a href="#">Política de Privacidade</a></li>
+              <li><a href="#">Política de Entrega</a></li>
+              <li><a href="#area-secreta">Área Secreta (Login)</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 30k Drinks. Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/catalog.js"></script>
+  </body>
+</html>
