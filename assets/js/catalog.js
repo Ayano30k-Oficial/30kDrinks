@@ -172,7 +172,7 @@ document.addEventListener('DOMContentLoaded', () => {
       
       // Optional: Open WhatsApp with pre-filled message
       const message = encodeURIComponent(`Olá! Gostaria de fazer um pedido:\n\n📦 Produto: ${productName}\n💰 Preço: ${productPrice}\n\nPor favor, me ajude a finalizar a compra!`);
-      const whatsappUrl = `https://wa.me/5511999999999?text=${message}`;
+      const whatsappUrl = `https://wa.me/48999620593?text=${message}`;
       
       // Ask user if they want to open WhatsApp
       if (confirm('Produto selecionado! Deseja abrir o WhatsApp para finalizar o pedido?')) {

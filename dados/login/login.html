@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login | 30K Drinks Afiliados</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+      font-family: 'Segoe UI', sans-serif;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .login-container {
+      background-color: #121212;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0,255,255,0.2);
+      width: 350px;
+      text-align: center;
+      border: 1px solid #333;
+    }
+    .login-container h1 {
+      margin-bottom: 25px;
+      color: #00ffc8;
+    }
+    .login-container input {
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0;
+      background-color: #1f1f1f;
+      border: 1px solid #444;
+      border-radius: 8px;
+      color: white;
+      outline: none;
+      transition: 0.3s;
+    }
+    .login-container input:focus {
+      border-color: #00ffc8;
+    }
+    .login-container button {
+      background-color: #00ffc8;
+      color: #000;
+      padding: 12px;
+      border: none;
+      width: 100%;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.3s;
+      margin-top: 10px;
+    }
+    .login-container button:hover {
+      background-color: #00bfa1;
+    }
+    .message {
+      margin-top: 15px;
+      color: #ff5050;
+      font-weight: bold;
+    }
+    .area-secreta {
+      display: none;
+      text-align: center;
+    }
+    .area-secreta h2 {
+      color: #00ffc8;
+      margin-bottom: 10px;
+    }
+    .logout {
+      margin-top: 20px;
+      background-color: #ff5050;
+    }
+    .logout:hover {
+      background-color: #d93636;
+    }
+  </style>
+</head>
+<body>
+
+<div class="login-container" id="loginBox">
+  <h1>🕶️ Área Secreta</h1>
+  <input type="text" id="username" placeholder="Usuário">
+  <input type="password" id="password" placeholder="Senha">
+  <button onclick="login()">Entrar</button>
+  <div class="message" id="message"></div>
+</div>
+
+<div class="area-secreta" id="secretArea">
+  <h2>🔒 Bem-vindo à Área de Afiliados 30K</h2>
+  <p>Acesso concedido. 🥂</p>
+  <button class="logout" onclick="logout()">Sair</button>
+</div>
+
+<script>
+  const users = {
+    "ayano30k": "drinks30k",
+    "vip30k": "secreto123",
+    "afiliado": "senha321"
+  };
+
+  function login() {
+    const user = document.getElementById('username').value.trim();
+    const pass = document.getElementById('password').value.trim();
+    const message = document.getElementById('message');
+
+    if (users[user] && users[user] === pass) {
+      document.getElementById('loginBox').style.display = 'none';
+      document.getElementById('secretArea').style.display = 'block';
+      message.innerText = '';
+    } else {
+      message.innerText = '❌ Usuário ou senha inválidos.';
+    }
+  }
+
+  function logout() {
+    document.getElementById('loginBox').style.display = 'block';
+    document.getElementById('secretArea').style.display = 'none';
+    document.getElementById('username').value = '';
+    document.getElementById('password').value = '';
+  }
+</script>
+
+</body>
+</html>

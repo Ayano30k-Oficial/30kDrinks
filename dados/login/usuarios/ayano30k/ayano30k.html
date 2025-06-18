@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>30K Drinks - Painel de Afiliados | Jarvis Edition</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../../../../assets/css/usuario.css">
+</head>
+<body>
+    <header>
+        <h1>PAINEL DE AFILIADOS 30K DRINKS</h1>
+    </header>
+
+    <main class="container">
+        <div class="card profile-card">
+            <h2><i class="fas fa-user-circle"></i> Olá, <span id="affiliateName"></span>!</h2>
+            <p><span class="small-text">Bem-vindo ao seu centro de controle.</span></p>
+            <div class="rank-info">
+                <span>Rank: <span id="affiliateRank">Top 10</span></span>
+            </div>
+            <p class="small-text">Sua jornada de sucesso continua.</p>
+        </div>
+
+        <div class="card balance-card">
+            <h2><i class="fas fa-wallet"></i> Saldo Disponível</h2>
+            <p class="value" id="availableBalance">R$ 0,00</p>
+            <p class="small-text">Seu dinheiro está seguro e pronto para saque.</p>
+        </div>
+
+        <div class="card total-sales-card">
+            <h2><i class="fas fa-chart-line"></i> Total de Vendas</h2>
+            <p class="value" id="totalSales">0</p>
+            <p class="small-text">Sua performance impressionante até agora.</p>
+        </div>
+
+        <div class="card current-season-sales-card">
+            <h2><i class="fas fa-calendar-alt"></i> Vendas na Temporada</h2>
+            <p class="value" id="currentSeasonSales">0</p>
+            <p class="small-text">Foco na temporada atual para superar metas.</p>
+        </div>
+
+        <div class="card accumulated-commissions-card">
+            <h2><i class="fas fa-hand-holding-usd"></i> Comissões Acumuladas</h2>
+            <p class="value" id="accumulatedCommissions">R$ 0,00</p>
+            <p class="small-text">O fruto do seu trabalho árduo.</p>
+        </div>
+
+        <div class="card affiliate-level-card">
+            <h2><i class="fas fa-star"></i> Nível de Afiliado</h2>
+            <p class="small-text">Seu progresso rumo ao topo.</p>
+            <div class="afiliado-nivel">
+                <div class="nivel-progresso" id="levelProgress">
+                    <span id="affiliateLevel">Nível 1</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card awards-card">
+            <h2><i class="fas fa-trophy"></i> Prêmios Conquistados</h2>
+            <div class="premios-container" id="awardsContainer">
+                <div class="premio-card">Medalha de Bronze</div>
+                <div class="premio-card">Troféu Primeiras Vendas</div>
+            </div>
+            <p class="small-text">Suas conquistas brilham!</p>
+        </div>
+
+        <div class="afiliado-links">
+            <h2>Seu Arsenal de Afiliado</h2>
+            <p class="small-text">Compartilhe e conquiste!</p>
+            <div class="codigo-afiliado" id="affiliateCode">30KAFILIADOX9Y7Z</div>
+            <div class="link-afiliado-wrapper">
+                <input type="text" id="afiliadoLink" value="https://30kdrinks.com.br/afiliado/30KAFILIADOX9Y7Z" readonly>
+                <button class="copy-button" id="copyLinkButton"><i class="fas fa-copy"></i> Copiar Link</button>
+            </div>
+        </div>
+
+        </main>
+
+    <div class="ai-assistant-popup" id="aiAssistantPopup">
+        <div class="ai-header">
+            <span>30K AI Assistant</span>
+            <button class="close-btn" id="closeAiPopup">&times;</button>
+        </div>
+        <div class="ai-messages" id="aiMessages">
+            </div>
+        <div class="ai-input-area">
+            <input type="text" id="aiInput" placeholder="Pergunte a 30K...">
+            <button id="aiSendButton"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+
+    <button class="ai-toggle-button" id="toggleAiButton"><i class="fas fa-robot"></i></button>
+
+    <script src="dadosjs/ayano30k.js"></script>
+    <script src="../../../ia30k.js"></script>
+    <script src="../../../main.js"></script>
+</body>
+</html>
