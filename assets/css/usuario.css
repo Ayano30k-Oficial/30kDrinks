@@ -271,10 +271,9 @@ header h1 {
 
 /* Assistente com IA (ChatGPT) */
 .ai-assistant-popup {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;    
+    position: fixed;    
     width:100%;
+    height: 100vh;
     background-color: rgba(10, 10, 26, 0.9); /* Mais sólido para o chat */
     backdrop-filter: blur(15px);
     border: 1px solid var(--cor-neon-azul);
@@ -344,8 +343,7 @@ header h1 {
 
 .ai-message {
     padding: 10px;
-    max-wid10: 1
-        
+    max-width: 100%;        
     word-wrap: break-word;
     font-family: 'Share Tech Mono', monospace;
 }
@@ -421,7 +419,7 @@ header h1 {
 
 .ai-toggle-button {
     position: fixed;
-    bottom: 20px;
+    bottom: 150px;
     right: 20px;
     background-color: var(--cor-neon-azul);
     color: var(--cor-fundo);

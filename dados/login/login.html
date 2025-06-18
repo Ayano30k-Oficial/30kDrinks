@@ -93,40 +93,8 @@
   <div class="message" id="message"></div>
 </div>
 
-<div class="area-secreta" id="secretArea">
-  <h2>🔒 Bem-vindo à Área de Afiliados 30K</h2>
-  <p>Acesso concedido. 🥂</p>
-  <button class="logout" onclick="logout()">Sair</button>
-</div>
 
-<script>
-  const users = {
-    "ayano30k": "drinks30k",
-    "vip30k": "secreto123",
-    "afiliado": "senha321"
-  };
-
-  function login() {
-    const user = document.getElementById('username').value.trim();
-    const pass = document.getElementById('password').value.trim();
-    const message = document.getElementById('message');
-
-    if (users[user] && users[user] === pass) {
-      document.getElementById('loginBox').style.display = 'none';
-      document.getElementById('secretArea').style.display = 'block';
-      message.innerText = '';
-    } else {
-      message.innerText = '❌ Usuário ou senha inválidos.';
-    }
-  }
-
-  function logout() {
-    document.getElementById('loginBox').style.display = 'block';
-    document.getElementById('secretArea').style.display = 'none';
-    document.getElementById('username').value = '';
-    document.getElementById('password').value = '';
-  }
-</script>
+<script src="dadoslogin/login.js"></script>
 
 </body>
 </html>
